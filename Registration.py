@@ -10,7 +10,8 @@ def Registration():
         temp=username.isalpha()
     address=input("enter the address : ")
     Aadhar=input("enter the Aadhar no : ")
-    Aadhar=Aadhar.replace(' ',' ')
+    Aadhar=Aadhar.replace(' ','')
+
     temp=Aadhar.isnumeric() and len(str(Aadhar))==12
     while temp == False:
         print("invalid aadhar no, please enter again....")
