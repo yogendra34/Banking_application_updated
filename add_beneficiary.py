@@ -4,6 +4,10 @@ from Connection import sqlexecution
 x=sqlexecution()
 cur = x.cur
 def add_beneficiary(username):
+    '''
+    This function is used to ....
+    :params: username: what is it?
+    '''
     Name=input("Please enter the name of beneficiary: ")
     temp= Name.isalpha()
     while temp==False:
