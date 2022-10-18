@@ -38,6 +38,7 @@ def Registration():
     while True:
         try:
                 password=input("Please enter a password : ")
+                password=password.replace(' ','')
                 if len(password)<8:
                         raise ValueError("entered password should contain at least 8 character")
                 if not any(char.isdigit()for char in password):
