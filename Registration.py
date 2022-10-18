@@ -19,7 +19,7 @@ def Registration():
         temp=Aadhar.isnumeric() and len(str(Aadhar))==12
     print("........Valid Aadhar no.......")
     mobile_no=input("enter the mobile no : ")
-    mobile_no=mobile_no.replace(' ',' ')
+    mobile_no=mobile_no.replace(' ','')
     temp=mobile_no.isnumeric() and len(str(mobile_no))==10 and mobile_no[0]==['6','7','8','9']
     while temp == False:
         print("invalid mobile no, please enter again....")
@@ -28,6 +28,7 @@ def Registration():
     print("......Valid mobile no.......")
     while True:
         amount=input("Enter the initial amount you want to put in the bank : ")
+        amount=amount.replace(' ','')
         if int(amount)>0 and amount.isnumeric():
                 print("Thank you for confirming the amount..")
                 break
