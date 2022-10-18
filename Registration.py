@@ -57,6 +57,7 @@ def Registration():
 
                 
     confirm_password=input("please confirm the entered password : ")
+    confirm_password=confirm_password.replace(' ','')
     temp=confirm_password!=password
     while temp==True:
             print("Your password is not matching, please try again........")
